@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function-Exemplo03</title>
+</head>
+<body>
+    <h1>Funções em JavaScript</h1>
+    <p>Invoca (chama) uma função que converte de Fahrenheit para Celsius</p>
+    <p id="demo"></p>
+    <button onclick="revelar()" class="revalar">&#9776;</button>
+    <div hidden class="menuNavegacao" id="menuNavegacao">
+        <h1>Menu de Navegação</h1>
+        <nav>
+        <dl>
+        <dt><h2>Function JavaScript<h2></dt>
+            <dd><a href="../1- Function JavaScript/Exemplo01.html">Exemplo01</a></dd>
+            <dd><a href="../1- Function JavaScript/Exemplo02.html">Exemplo02</a></dd>
+            <dd><a href="../1- Function JavaScript/Exemplo03.html">Exemplo03</a></dd>
+            <dd><a href="../1- Function JavaScript/Exemplo04.html">Exemplo04</a></dd>
+            <dd><a href="../1- Function JavaScript/Exemplo05.html">Exemplo05</a></dd>
+            <dd><a href="../1- Function JavaScript/Exemplo06.html">Exemplo06</a></dd>
+            <dd><a href="../1- Function JavaScript/Exemplo07.html">Exemplo07</a></dd>
+        <dt><h2>Objects JavaScript<h2></dt>
+            <dd><a href="../2- Objects JavaScript/Exemplo01.html">Exemplo01</a></dd>
+            <dd><a href="../2- Objects JavaScript/Exemplo02.html">Exemplo02</a></dd>
+            <dd><a href="../2- Objects JavaScript/Exemplo03.html">Exemplo03</a></dd>
+            <dd><a href="../2- Objects JavaScript/Exemplo04.html">Exemplo04</a></dd>
+            <dd><a href="../2- Objects JavaScript/Exemplo05.html">Exemplo05</a></dd>
+            <dd><a href="../2- Objects JavaScript/Exemplo06.html">Exemplo06</a></dd>
+            <dd><a href="../2- Objects JavaScript/Exemplo07.html">Exemplo07</a></dd>
+            <dd><a href="../2- Objects JavaScript/Exemplo08.html">Exemplo08</a></dd>
+        <dt><h2>Foreach JavaScript<h2></dt>
+            <dd><a href="../3- Foreach JavaScript/Exemplo01.html">Exemplo01</a></dd>
+            <dd><a href="../3- Foreach JavaScript/Exemplo02.html">Exemplo02</a></dd>
+            <dd><a href="../3- Foreach JavaScript/Exemplo03.html">Exemplo03</a></dd>
+        <dt><h2>Map JavaScript<h2></dt>
+            <dd><a href="../4- Map JavaScript/Exemplo01.html">Exemplo01</a></dd>
+            <dd><a href="../4- Map JavaScript/Exemplo02.html">Exemplo02</a></dd>
+            <dd><a href="../4- Map JavaScript/Exemplo03.html">Exemplo03</a></dd>
+        <dt><h2>Filter JavaScript<h2></dt>
+            <dd><a href="../5- Filter JavaScript/Exemplo01.html">Exemplo01</a></dd>
+            <dd><a href="../5- Filter JavaScript/Exemplo02.html">Exemplo02</a></dd>
+        <dt><h2>Find JavaScript<h2></dt>
+            <dd><a href="../6- Find JavaScript/Exemplo01.html">Exemplo01</a></dd>
+            <dd><a href="../6- Find JavaScript/Exemplo02.html">Exemplo02</a></dd>
+        <dt><h2>Reduce JavaScript<h2></dt>
+            <dd><a href="../7- Reduce JavaScript/Exemplo01.html">Exemplo01</a></dd>
+            <dd><a href="../7- Reduce JavaScript/Exemplo02.html">Exemplo02</a></dd>
+        </dl>
+        <dt><h2><a href="../0-ProjetoAplicaçãoReduce/index.html">Aplicação Método Reduce</a><h2></dt>
+        </nav>
+    </div> 
+
+    <script>
+        function paraCelsius(f)
+        {
+            return (5/9) * (f-32)
+        }
+        function revelar()
+        {
+            document.getElementById("menuNavegacao").removeAttribute("hidden")
+        }
+        let valor = paraCelsius(77)
+        document.getElementById("demo").innerHTML = valor
+    </script>
+</body>
+</html>
